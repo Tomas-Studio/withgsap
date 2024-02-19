@@ -1,75 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Animations built with the most advance animation library, GSAP
+This site showcase examples of different animations built with vue & Gsap 
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+check it out [withgsap.com](https://withgsap.com)
 
-## Setup
+## Examples
+1. The Scroll Slide
 
-Make sure to install the dependencies:
+## Local setup
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Clone this repo via `git clone`
+1. install `npm i -g @antfu/ni` (For PowerShell users run this in your current terminal: `Remove-Item Alias:ni -Force -ErrorAction Ignore`). See [documentation](https://github.com/antfu/ni) on how to use it
+1. Make sure to install the dependencies using `ni`
+1. Run `nlx simple-git-hooks`
+1. Run `nr` to start the local Nuxt dev server
