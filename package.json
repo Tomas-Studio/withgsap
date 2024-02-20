@@ -1,7 +1,21 @@
 {
-  "name": "nuxt-app",
+  "name": "with-gsap",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@8.13.1",
+  "description": "A showroom of different animations built with vue & Gsap",
+  "author": "Tunji Oalkunle",
+  "license": "MIT",
+  "homepage": "https://with-gsap.dev/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomas-Studio/withgsap.git"
+  },
+  "keywords": [
+    "gsap",
+    "vue",
+    "animation"
+  ],
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
