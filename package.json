@@ -13,5 +13,11 @@
     "nuxt": "^3.10.2",
     "vue": "^3.4.19",
     "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.4",
+    "@antfu/ni": "^0.21.12",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.9.0"
   }
 }
