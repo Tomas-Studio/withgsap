@@ -1,5 +1,5 @@
 # Animations built with the most advance animation library, GSAP
-This site showcase examples of different animations built with vue & Gsap 
+This site showcase examples of different animations built with vue & Gsap
 
 check it out [withgsap.com](https://withgsap.com)
 
