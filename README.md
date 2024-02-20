@@ -3,7 +3,7 @@ This site showcase examples of different animations built with vue & Gsap
 
 check it out [withgsap.com](https://withgsap.com)
 
-## Examples
+## Animation List
 1. The Scroll Slide
 
 ## Local setup
@@ -13,3 +13,6 @@ check it out [withgsap.com](https://withgsap.com)
 1. Make sure to install the dependencies using `ni`
 1. Run `nlx simple-git-hooks`
 1. Run `nr` to start the local Nuxt dev server
+
+## License
+MIT. Made with 💖
