@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/styles/base.css', '~/styles/font.css'],
+  css: ['~/assets/styles/base.css', '~/assets/styles/font.css'],
   modules: ['@nuxt/image', '@unocss/nuxt'],
 })
