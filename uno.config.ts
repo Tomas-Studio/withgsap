@@ -10,7 +10,9 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: {},
+  shortcuts: {
+    fyc: 'flex items-center',
+  },
   rules: [],
   theme: {
     colors: {

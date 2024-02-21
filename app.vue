@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import '@unocss/reset/eric-meyer.css'
+import '@unocss/reset/tailwind.css'
 
 useHead({
   htmlAttrs: { lang: 'en', class: 'touch-manipulation' },
