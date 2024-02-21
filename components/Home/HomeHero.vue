@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div class="h-100dvh grid place-items-center bg-[#eb3054]">
-    <h1 class="text-26 font-tt-norms fw700 tracking-tight ">
+  <section class="h-100dvh grid place-items-center bg-dark">
+    <h1 class="text-(26 gray-3) font-tt-norms fw500 tracking-tight ">
       WithGsap
     </h1>
-  </div>
+  </section>
 </template>

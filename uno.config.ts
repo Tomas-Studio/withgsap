@@ -12,7 +12,16 @@ import {
 export default defineConfig({
   shortcuts: {},
   rules: [],
-  theme: {},
+  theme: {
+    colors: {
+      dark: '#111111',
+      gRed: '#eb3054',
+      gYellow: '#ffc549',
+      gBlue: '#0095d5',
+      gNavy: '#171d44',
+      gGreen: '#25b68c',
+    },
+  },
   presets: [
     presetUno(),
     presetAttributify(),
