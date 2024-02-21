@@ -2,5 +2,5 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/styles/base.css', '~/assets/styles/font.css'],
-  modules: ['@nuxt/image', '@unocss/nuxt'],
+  modules: ['@nuxt/image', '@unocss/nuxt', '@nuxtjs/fontaine'],
 })
