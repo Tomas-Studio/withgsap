@@ -10,9 +10,20 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: {},
+  shortcuts: {
+    fyc: 'flex items-center',
+  },
   rules: [],
-  theme: {},
+  theme: {
+    colors: {
+      dark: '#111111',
+      gRed: '#eb3054',
+      gYellow: '#ffc549',
+      gBlue: '#0095d5',
+      gNavy: '#171d44',
+      gGreen: '#25b68c',
+    },
+  },
   presets: [
     presetUno(),
     presetAttributify(),
@@ -21,7 +32,14 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-
+        'anta': [
+          { name: 'Anta', weights: ['400'] },
+          { name: 'sans-serif', provider: 'none' },
+        ],
+        'protest-riot': [
+          { name: 'Protest Riot', weights: ['400'] },
+          { name: 'sans-serif', provider: 'none' },
+        ],
       },
     }),
   ],

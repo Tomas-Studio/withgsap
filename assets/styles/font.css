@@ -1,0 +1,49 @@
+@font-face {
+  font-display: swap;
+  font-family: 'acorn';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: url('~/assets/fonts/acorn.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Norms Pro';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  src: url('~/assets/fonts/TTNormsPro-Light.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'TT Norms Pro';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: url('~/assets/fonts/TTNormsPro-Regular.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'TT Norms Pro';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  src: url('~/assets/fonts/TTNormsPro-Medium.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'TT Norms Pro';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  src: url('~/assets/fonts/TTNormsPro-Bold.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'TT Norms Pro';
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  src: url('~/assets/fonts/TTNormsPro-Black.woff') format('woff');
+}

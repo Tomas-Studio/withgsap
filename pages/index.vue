@@ -1,3 +1,4 @@
 <template>
   <HomeHero />
+  <HomeAnimationList />
 </template>

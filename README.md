@@ -1,10 +1,18 @@
 # Animations built with the most advance animation library, GSAP
-This site showcase examples of different animations built with vue & Gsap
+A showroom of different animations built with vue & Gsap
 
-check it out [withgsap.com](https://withgsap.com)
+check it out [withgsap](https://withgsap.com)
 
 ## Animation List
 1. The Scroll Slide
+
+## How to Contribute
+1. Fork the project
+1. Follow the steps in the setup below
+1. Create an Issue and contribute
+1. Open a PR and attach the issue ID to the PR
+
+Thank you for your contribution
 
 ## Local setup
 
