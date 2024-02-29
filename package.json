@@ -17,7 +17,7 @@
     "animation"
   ],
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --preset=vercel_edge",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
