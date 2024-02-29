@@ -26,6 +26,7 @@
     "lintfix": "eslint . --fix"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "nuxt": "^3.10.2",
     "vue": "^3.4.19",
     "vue-router": "^4.2.5"
