@@ -12,6 +12,7 @@ import {
 export default defineConfig({
   shortcuts: {
     fyc: 'flex items-center',
+    fcc: 'flex items-center justify-center',
   },
   rules: [],
   theme: {
