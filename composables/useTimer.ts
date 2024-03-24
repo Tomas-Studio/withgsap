@@ -31,9 +31,52 @@ export default function (date: Date) {
   // Animation section
   const { $gsap: gsap } = useNuxtApp()
 
-  function animateTimer(el: Ref<HTMLDivElement | null>, oldValue: string, newValue: string) {
-    console.log(`${el.value}, ${oldValue}, ${newValue}`)
-    console.log(gsap)
+  function animateTimer(el: Ref<HTMLDivElement | null>, oldValue: string, newValue: string, idx: number) {
+    const timeSegments = el.value!.querySelectorAll('.time-segment')
+    updateTimeSegement(timeSegments[idx], [oldValue, newValue])
+  }
+
+  function updateTimeSegement(el: Element, values: [string, string]) {
+    const displayTop = el.querySelector('.display__top')
+    const displayBottom = el.querySelector('.display__bottom')
+    const overlayTop = el.querySelector('.overlay__top')
+    const overlayBottom = el.querySelector('.overlay__bottom')
+
+    overlayTop!.textContent = values[0]
+    displayBottom!.textContent = values[0]
+
+    gsap.to(
+      overlayTop,
+      {
+        keyframes: {
+          '0%': { rotateX: 0 },
+          '50%': { rotateX: -90 },
+          '100%': { rotateX: -90 },
+        },
+        duration: 0.8,
+        onComplete: () => {
+          displayTop!.textContent = values[1]
+          overlayBottom!.textContent = values[1]
+        },
+      },
+    )
+
+    gsap.to(
+      overlayBottom,
+      {
+        keyframes: {
+          '0%': { rotateX: 90 },
+          '50%': { rotateX: 90 },
+          '100%': {
+            rotateX: 0,
+            onStart: () => {
+              displayBottom!.textContent = values[1]
+            },
+          },
+        },
+        duration: 0.8,
+      },
+    )
   }
 
   return {

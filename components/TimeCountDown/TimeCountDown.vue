@@ -5,8 +5,8 @@ const minutesRef = ref<HTMLDivElement | null>(null)
 const secondsRef = ref<HTMLDivElement | null>(null)
 
 const { days, hours, minutes, seconds, animateTimer } = useTimer(new Date('2024-05-10T09:00:00Z'))
-watch(() => seconds.value[0], (newSec0, oldSec0) => animateTimer(secondsRef, oldSec0, newSec0))
-watch(() => seconds.value[1], (newSec1, oldSec1) => animateTimer(secondsRef, oldSec1, newSec1))
+watch(() => seconds.value[0], (newSec0, oldSec0) => animateTimer(secondsRef, oldSec0, newSec0, 0))
+watch(() => seconds.value[1], (newSec1, oldSec1) => animateTimer(secondsRef, oldSec1, newSec1, 1))
 </script>
 
 <template>
