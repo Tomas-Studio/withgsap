@@ -6,5 +6,6 @@ export default antfu({
     'node/prefer-global/process': 'off',
     'max-statements-per-line': 'off',
     'style/max-statements-per-line': 'off',
+    'no-console': 'off',
   },
 })
