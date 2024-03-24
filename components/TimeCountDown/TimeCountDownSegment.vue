@@ -31,11 +31,11 @@ defineProps<Props>()
     }
 
     & .display__top {
-      --uno: text-gray-2 pt bg-dark leading-[1] rounded-t-md;
+      --uno: text-gray-2 pt3 bg-dark leading-[1] rounded-t-md;
     }
 
     & .display__bottom {
-      --uno: text-gray-1 pb bg-neutral-8 leading-[0];
+      --uno: text-gray-1 pb3 bg-neutral-8 leading-[0];
       --uno: rounded-b-md;
     }
 
@@ -47,11 +47,11 @@ defineProps<Props>()
       }
 
       & .overlay__top {
-        --uno: top-0 text-gray-2 pt bg-dark leading-[1] rounded-t-md origin-bottom;
+        --uno: top-0 text-gray-2 pt3 bg-dark leading-[1] rounded-t-md origin-bottom;
       }
 
       & .overlay__bottom {
-        --uno: bottom-0 text-gray-1 pb bg-neutral-8 leading-[0];
+        --uno: bottom-0 text-gray-1 pb3 bg-neutral-8 leading-[0];
         --uno: rounded-b-md border-t-2 border-dark origin-top;
       }
     }
