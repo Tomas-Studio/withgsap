@@ -11,8 +11,10 @@ import {
 
 export default defineConfig({
   shortcuts: {
-    fyc: 'flex items-center',
-    fcc: 'flex items-center justify-center',
+    'fyc': 'flex items-center',
+    'fcc': 'flex items-center justify-center',
+    'p-web': '',
+    'flink': 'underline underline-dashed underline-1 hover:no-underline duration-300 underline-offset-2',
   },
   rules: [],
   theme: {
