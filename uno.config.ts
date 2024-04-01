@@ -14,7 +14,7 @@ export default defineConfig({
     'fyc': 'flex items-center',
     'fcc': 'flex items-center justify-center',
     'p-web': '',
-    'flink': 'underline underline-dashed underline-1 hover:no-underline duration-300 underline-offset-2',
+    'flink': 'underline underline-dashed outline-none underline-1 hover:no-underline duration-300 underline-offset-2',
   },
   rules: [],
   theme: {
