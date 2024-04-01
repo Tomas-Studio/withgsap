@@ -6,7 +6,7 @@ const { showInfo } = useInfo()
   <ShowInfoButton @show-info="showInfo = !showInfo" />
 
   <Teleport to="body">
-    <ShowInfoDrawer :show="showInfo">
+    <ShowInfoDrawer v-model:show="showInfo">
       This is a Drawer again
     </ShowInfoDrawer>
   </Teleport>

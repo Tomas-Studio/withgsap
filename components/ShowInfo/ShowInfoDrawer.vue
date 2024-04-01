@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ show: boolean }>()
+const show = defineModel<boolean>('show', { required: true })
 const { onLeave, onEnter, onBeforeEnter } = useInfo()
 </script>
 
