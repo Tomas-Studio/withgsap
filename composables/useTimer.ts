@@ -1,5 +1,3 @@
-import type { Ref } from 'vue'
-
 export default function (date: Date) {
   const currentDate = useNow()
   const futureDate = useState('future-date', () => date) // future date, can be changed when composable is initialized
