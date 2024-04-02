@@ -4,7 +4,7 @@ useSeoMeta({ title: 'Time Countdown' })
 </script>
 
 <template>
-  <main class="min-h-100dvh wfull flex flex-col bg-gray-2">
+  <main class="min-h-100dvh wfull flex flex-col">
     <ShowInfoDrawerWrapper />
     <div class="flex-1 fcc">
       <TimeCountDown />

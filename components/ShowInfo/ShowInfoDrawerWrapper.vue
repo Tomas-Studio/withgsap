@@ -3,11 +3,9 @@ const { showInfo } = useInfo()
 </script>
 
 <template>
-  <ShowInfoButton @show-info="showInfo = !showInfo" />
+  <ShowInfoButton @show-info="showInfo = true" />
 
   <Teleport to="body">
-    <ShowInfoDrawer v-model:show="showInfo">
-      This is a Drawer again
-    </ShowInfoDrawer>
+    <ShowInfoDrawer v-model:show="showInfo" />
   </Teleport>
 </template>
