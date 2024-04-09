@@ -5,7 +5,7 @@ const { onLeave, onEnter, onBeforeEnter } = useInfo()
 
 <template>
   <Transition :css="false" @before-enter="onBeforeEnter" @enter="onEnter" @leave="onLeave">
-    <div v-if="show" class="fixed top-0 z-30 right-1 max-w-lg w-lg max-h-99% h-full my1 p5 bg-dark text-white">
+    <div v-if="show" class="fixed top-0 z-30 right-1 max-w-540px w-540px max-h-99% h-full my1 p5 bg-dark text-white">
       <h1 class="text-xl mb3">
         This is the Title
       </h1>

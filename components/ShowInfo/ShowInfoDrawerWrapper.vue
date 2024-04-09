@@ -6,6 +6,8 @@ const { showInfo } = useInfo()
   <ShowInfoButton @show-info="showInfo = true" />
 
   <Teleport to="body">
-    <ShowInfoDrawer v-model:show="showInfo" />
+    <ShowInfoDrawer v-model:show="showInfo">
+      <slot />
+    </ShowInfoDrawer>
   </Teleport>
 </template>
