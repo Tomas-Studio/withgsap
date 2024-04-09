@@ -37,6 +37,29 @@
   --uno: hidden;
 }
 
+/* For Chrome, Edge, and Safari */
+.sb > pre::-webkit-scrollbar {
+  --uno: w-18px h-18px;
+}
+
+.sb > pre::-webkit-scrollbar-track {
+  --uno: bg-transparent;
+}
+
+.sb > pre::-webkit-scrollbar-thumb {
+  --uno: bg-g-red2/70 rounded-8px bg-clip-padding;
+  --uno: border-6 border-solid border-transparent;
+}
+
+.sb > pre::-webkit-scrollbar-thumb:hover {
+  --uno: bg-g-red2;
+}
+
+.sb > pre::-webkit-scrollbar-button, 
+.sb > pre::-webkit-scrollbar-corner  {
+  --uno: hidden;
+}
+
 /* to make shiki highlighter responsive to site theme */
 html.dark .shiki,
 html.dark .shiki span {

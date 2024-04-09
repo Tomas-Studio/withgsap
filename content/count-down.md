@@ -28,3 +28,22 @@ defineProps<Props>()
   </div>
 </template>
 ```
+And we now create a `Countdown` component which contains all the time sections, it looks something like this
+
+```vue [Countdown.vue]
+<template>
+  <div>
+    <div>
+      <p class="section-title">
+        DAYS
+      </p>
+      <div>
+        <TimeSegment :data="days[0]" />
+        <TimeSegment :data="days[1]" />
+      </div>
+    </div>
+
+    // other sections goes here i.e hours, minutes & seconds
+  </div>
+</template>
+```
