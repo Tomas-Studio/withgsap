@@ -37,7 +37,7 @@ const highlight = computed(() => {
 
 <template>
   <div relative>
-    <div class="[&>pre]:(px4 pt14 pb2 of-x-auto sb) focus-visible:( [&>pre]:(outline-1 outline-g-yellow outline-dashed)) [&>code]:( [&>pre]:(font-mono text-sm)) border-neutral-3 dark:border-neutral-8 my8 rounded-sm" v-html="highlight" />
+    <div class="[&>pre]:(px4 pt14 pb2 of-x-auto sb) focus-visible:( [&>pre]:(outline-1 outline-g-yellow outline-dashed)) [&>code]:( [&>pre]:(font-mono text-sm)) border-neutral-3 dark:border-neutral-8 my6 rounded-sm" v-html="highlight" />
     <div class="absolute top-0 left-0 py1 pl4 pr2 fyc wfull border-b-2 border-dark">
       <span class="text-(3.75 neutral-5) font-mono">
         {{ props.language }}
@@ -54,7 +54,6 @@ const highlight = computed(() => {
       >
         <div i-fluent:copy-select-20-regular />
         <!-- <div i-fluent:copy-select-20-filled /> -->
-        <!-- <div v-else i-solar-copy-bold-duotone /> -->
       </button>
     </div>
   </div>

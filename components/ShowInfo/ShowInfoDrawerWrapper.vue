@@ -1,4 +1,5 @@
 <script setup lang="ts">
+defineProps<{ title: string }>()
 const { showInfo } = useInfo()
 </script>
 
@@ -7,6 +8,9 @@ const { showInfo } = useInfo()
 
   <Teleport to="body">
     <ShowInfoDrawer v-model:show="showInfo">
+      <template #title>
+        <h1 class="text-xl" v-html="title" />
+      </template>
       <slot />
     </ShowInfoDrawer>
   </Teleport>

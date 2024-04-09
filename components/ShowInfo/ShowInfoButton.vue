@@ -13,6 +13,6 @@ const { showInfo } = useInfo()
     aria-label="show code"
     @click="emit('show-info')"
   >
-    <div i-ri:info-i h5 w5 />
+    <div i-clarity:help-info-line h5 w5 />
   </button>
 </template>

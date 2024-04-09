@@ -15,25 +15,25 @@
 } */
 
 /* For Chrome, Edge, and Safari */
-::-webkit-scrollbar {
-  --uno: w-18px h-22px;
+.sb::-webkit-scrollbar {
+  --uno: w-18px h-18px;
 }
 
-::-webkit-scrollbar-track {
+.sb::-webkit-scrollbar-track {
   --uno: bg-transparent;
 }
 
-::-webkit-scrollbar-thumb {
+.sb::-webkit-scrollbar-thumb {
   --uno: bg-g-red2/70 rounded-8px bg-clip-padding;
-  --uno: border-8 border-solid border-transparent;
+  --uno: border-6 border-solid border-transparent;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.sb::-webkit-scrollbar-thumb:hover {
   --uno: bg-g-red2;
 }
 
-::-webkit-scrollbar-button, 
-::-webkit-scrollbar-corner  {
+.sb::-webkit-scrollbar-button, 
+.sb::-webkit-scrollbar-corner  {
   --uno: hidden;
 }
 

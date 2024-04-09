@@ -6,7 +6,7 @@ const { data } = await useAsyncData('count-down', () => queryContent('/count-dow
 
 <template>
   <main class="min-h-100dvh wfull flex flex-col">
-    <ShowInfoDrawerWrapper>
+    <ShowInfoDrawerWrapper :title="`${data?.title}`">
       <article>
         <ContentRenderer :value="data" />
       </article>

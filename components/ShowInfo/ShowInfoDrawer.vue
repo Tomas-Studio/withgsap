@@ -5,19 +5,19 @@ const { onLeave, onEnter, onBeforeEnter } = useInfo()
 
 <template>
   <Transition :css="false" @before-enter="onBeforeEnter" @enter="onEnter" @leave="onLeave">
-    <div v-if="show" class="fixed top-0 z-30 right-1 max-w-540px w-540px max-h-99% h-full my1 p5 bg-dark text-white">
-      <h1 class="text-xl mb3">
-        This is the Title
-      </h1>
-      <slot />
-      <buttton
-        class="absolute p1.5 top-3 right-2 cursor-pointer
-         text-gray-3 hover:text-white duration-300"
-        aria-label="show code"
-        @click="show = false"
-      >
-        <div i-ci:close-md h5 w5 />
-      </buttton>
+    <div v-if="show" class="fixed top-0 z-30 right-1 max-w-540px w-540px max-h-99% h-full my1 bg-dark text-white flex flex-col">
+      <div class="fyc justify-between wfull pl5 pr2 py3">
+        <slot name="title" />
+        <buttton
+          class="p2 cursor-pointer text-gray-3 hover:text-white duration-300"
+          aria-label="show code" @click="show = false"
+        >
+          <div i-ci:close-md h5.5 w5.5 />
+        </buttton>
+      </div>
+      <div class=" flex-1 of-y-auto sb pl5 pr2 py3">
+        <slot />
+      </div>
     </div>
   </Transition>
 </template>

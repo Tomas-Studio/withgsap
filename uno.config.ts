@@ -37,6 +37,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
+        'mono': 'DM Mono:300,400',
         'anta': [
           { name: 'Anta', weights: ['400'] },
           { name: 'sans-serif', provider: 'none' },
