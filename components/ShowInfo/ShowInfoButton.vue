@@ -10,7 +10,7 @@ const { showInfo } = useInfo()
     active:(bg-yellow-6 text-gray-3) duration-300
     top-3 right-3 outline-none z-40 rounded-full
     focus-visible:(outline-1.5 outline-dashed outline-offset-3 outline-emerald-6)"
-    aria-label="show code"
+    aria-label="show info"
     @click="emit('show-info')"
   >
     <div i-clarity:help-info-line h5 w5 />

@@ -1,6 +1,11 @@
 <script setup lang="ts">
 defineProps<{ title: string }>()
 const { showInfo } = useInfo()
+
+useEventListener('keydown', (e) => {
+  if (e.key === 'Escape')
+    showInfo.value = false
+})
 </script>
 
 <template>

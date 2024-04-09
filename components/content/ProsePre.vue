@@ -32,6 +32,8 @@ const highlight = computed(() => {
     ],
   })
 })
+
+const { copy, copied } = useClipboard()
 </script>
 
 <template>
@@ -46,13 +48,13 @@ const highlight = computed(() => {
         {{ props.filename }}
       </span>
       <button
-        v-tooltip.left="{ content: 'Copied', triggers: [] }"
         class="p2 text-base text-neutral-4 hover:text-neutral-5 duration-300" focus-visible:text-neutral-6 dark:focus-visible:text-neutral-3
         focusable
         aria-label="Copy code"
+        @click="copy(props.code)"
       >
-        <div i-fluent:copy-select-20-regular />
-        <!-- <div i-fluent:copy-select-20-filled /> -->
+        <div v-if="!copied" i-fluent:copy-select-20-regular />
+        <div v-else i-fluent:copy-select-20-filled />
       </button>
     </div>
   </div>
