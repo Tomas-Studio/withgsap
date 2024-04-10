@@ -70,3 +70,28 @@ html.dark .shiki span {
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;
 }
+
+.has-diff code .diff.remove {
+  --uno: bg-g-red2/30;
+}
+
+.has-diff code .diff {
+  --uno: transition-background-color duration-500;
+  --uno: -mx6 px6 w-[calc(100%+48px)] inline-block;
+}
+
+.has-diff code .diff.remove:before {
+  --uno: text-g-red content-['-'];
+}
+
+.has-diff code .diff:before {
+  --uno: absolute left-2.5;
+}
+
+.has-diff code .diff.add {
+  --uno: bg-green-5/30;
+}
+
+.has-diff code .diff.add:before {
+  --uno: text-green-5 content-['+'];
+}

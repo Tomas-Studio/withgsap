@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { getHighlighter } from 'shiki'
 import { transformerNotationDiff, transformerNotationHighlight } from '@shikijs/transformers'
 
 interface Props {
@@ -13,11 +12,6 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), { code: '', filename: null, language: '', meta: null, class: null, highlights: () => [], style: null })
-
-const highlighter = await getHighlighter({
-  themes: ['one-dark-pro', 'solarized-dark'],
-  langs: ['css', 'js', 'vue', 'ts', 'text'],
-})
 
 const highlight = computed(() => {
   return highlighter.codeToHtml(props.code, {

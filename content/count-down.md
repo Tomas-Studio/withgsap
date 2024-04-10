@@ -19,7 +19,8 @@ defineProps<Props>()
   <div class="time-segment">
     <div class="display">
       <div class="display__top" v-html="data" />
-      <div class="display__bottom" />
+      <div class="display__bottom" v-html="data" /> // [!code --]
+      <div class="display__bottom" /> // [!code ++]
       <div class="overlay">
         <div class="overlay__top" v-html="data" />
         <div class="overlay__bottom" v-html="data" />
