@@ -2,5 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/styles/base.css', '~/assets/styles/font.css'],
-  modules: ['@nuxt/image', '@unocss/nuxt', '@nuxtjs/fontaine', '@vueuse/nuxt'],
+  modules: [
+    '@nuxt/image',
+    '@unocss/nuxt',
+    '@nuxtjs/fontaine',
+    '@vueuse/nuxt',
+    '@nuxt/content',
+  ],
+  content: {
+    documentDriven: false,
+  },
 })

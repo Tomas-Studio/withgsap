@@ -1,11 +1,16 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'none' })
 useSeoMeta({ title: 'Time Countdown' })
+const { data } = await useAsyncData('count-down', () => queryContent('/count-down').findOne())
 </script>
 
 <template>
   <main class="min-h-100dvh wfull flex flex-col">
-    <ShowInfoDrawerWrapper />
+    <ShowInfoDrawerWrapper :title="`${data?.title}`">
+      <article>
+        <ContentRenderer :value="data" />
+      </article>
+    </ShowInfoDrawerWrapper>
     <div class="flex-1 fcc">
       <TimeCountDown />
     </div>

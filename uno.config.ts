@@ -21,10 +21,12 @@ export default defineConfig({
     colors: {
       dark: '#111111',
       gRed: '#eb3054',
+      gRed2: '#b01c2e',
       gYellow: '#ffc549',
       gBlue: '#0095d5',
       gNavy: '#171d44',
       gGreen: '#25b68c',
+      gLight: '#F6F6F6',
     },
   },
   presets: [
@@ -35,6 +37,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
+        'mono': 'DM Mono:300,400',
         'anta': [
           { name: 'Anta', weights: ['400'] },
           { name: 'sans-serif', provider: 'none' },
