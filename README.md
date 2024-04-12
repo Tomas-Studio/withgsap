@@ -4,7 +4,7 @@ A showroom of different animations built with vue & Gsap
 check it out [withgsap](https://withgsap.com)
 
 ## Animation List
-1. The Scroll Slide
+1. Countdown Timer
 
 ## How to Contribute
 1. Fork the project
